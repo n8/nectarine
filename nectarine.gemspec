@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.summary     = "Runs a method over a collection of Rails models. But does it in parallel using Active Job."
   s.description = "Runs a method over a collection of Rails models. But does it in parallel using Active Job."
   s.license     = "MIT"
+  s.homepage    = "https://github.com/n8/nectarine"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
