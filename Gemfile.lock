@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     nectarine (0.1.0)
-      activejob (>= 5.2.0)
       activejob-status (~> 0.1.5)
       rails (~> 5.2.0)
 

@@ -1,4 +1,4 @@
-# Nectarine
+# Nectarine 
 
 *Parallel processing*
 
@@ -14,7 +14,7 @@ Whether we're using Resque/Sidekiq/Delayed Job/etc. Why not send things there fo
 
 So here's a proof of concept to do just that. It's called Nectarine. 
 
-Nectarine works over a collection of Active Record objects, sending each object to your Job system using Active Job, and executing a single method on that object. The main thread blocks until processing has completed on all the objects. 
+Nectarine (like peach - parallel each) works over a collection of Active Record objects, sending each object to your Job system using Active Job, and executing a single method on that object. The main thread blocks until processing has completed on all the objects. 
 
 That's it. I'm using it now in an app ([FilmHope.com](https://filmhope.com/)) that takes a user's video, converts it into hundreds of static thumbnails, and then for each thumbnail, Nectarine jobs out processing on each image, calling a bunch of other APIs as needed. It's a super slow task, which is why having Nectarine handle those hundreds of thumbs in parallel is a nice workflow to have. 
 
