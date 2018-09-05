@@ -1,6 +1,6 @@
 # Nectarine 
 
-*Parallel processing*
+*Parallel processing (for Rails using Active Job)*
 
 > a mode of computer operation in which a process is split into parts that execute simultaneously on different processors attached to the same computer.
 
